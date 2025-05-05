@@ -3,7 +3,7 @@
 <br/><br/>
 
 ## 프로젝트 주제
-> 논문 [Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization](https://arxiv.org/abs/1703.06868) 학습 및 구현
+> 논문 [Arbitrary Style Transfer in Real-time with Adaptive Instance Normalization](https://arxiv.org/abs/1703.06868) 구현 및 개선
 
 ```
 @inproceedings{huang2017adain,
@@ -32,11 +32,11 @@
 |6주차|4/10 ~ 4/16|프로젝트 방향성 및 주제 선정|
 |7주차|4/17 ~ 4/23|논문 읽기 및 이미지 처리 공부|
 |8주차|4/24 ~ 4/30|논문 review 및 discussion, 중간 발표 준비|
-|9주차|5/1 ~ 5/7|데이터 수집 및 전처리|
-|10주차|5/8 ~ 5/15|모델 분석|
-|11주차|5/16 ~ 5/21|모델 개선 방향 확정|
-|12주차|5/22 ~ 5/28|모델 구현 및 최적화|
-|13주차|5/29 ~ 6/4|모델 최적화|
+|9주차|5/1 ~ 5/7|감정 분류 모델 데이터 수집 및 전처리|
+|10주차|5/8 ~ 5/15|감정 분류 모델 구현|
+|11주차|5/16 ~ 5/21|AdaIN 데이터 수집 및 전처리|
+|12주차|5/22 ~ 5/28|AdaIN 모델 구성|
+|13주차|5/29 ~ 6/4|최종 평가 및 검증|
 |14주차|6/5 ~ 6/11|article 정리 및 발표 준비|
 
 <br/>
@@ -44,10 +44,10 @@
 ## 주차별 팀원 기여도
 |이름|6주차|7주차|8주차|9주차|10주차|11주차|12주차|13주차|14주차|
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|김희주|25%|25%|25%|
-|이나경|25%|25%|25%|
-|채서연|25%|25%|25%|
-|강민정|25%|25%|25%|
+|김희주|25%|25%|25%|25%|
+|이나경|25%|25%|25%|25%|
+|채서연|25%|25%|25%|25%|
+|강민정|25%|25%|25%|25%|
 
 <br/><br/>
 
@@ -105,9 +105,11 @@
   <br/>
   <img width="600" alt="Image" src="https://github.com/user-attachments/assets/18690827-da7b-49e5-9979-f2370cf0b25f" />
 
+<br/>
+
 ### 8주차
 > 논문 review 및 discussion, 중간 발표 준비
-* 일시 및 장소: 2025/04/26 토요일 오후 16시 30분 Google Meet
+* 일시 및 장소: 2025/04/26 토요일 오후 4시 30분 Google Meet
 * 참석 인원: 김희주, 이나경, 채서연, 강민정
 * 회의 내용
   - 논문 요약, 강/약점, 코멘트 공유
@@ -118,3 +120,50 @@
   <img width="600" alt="Image" src="https://github.com/user-attachments/assets/03cd2925-9aa4-46fe-9dc6-502d8c2638ee" />
 
 <br/>
+
+### 9주차
+> 데이터 수집 및 전처리
+* 일시 및 장소: 2025/05/05 월요일 오후 5시 Google Meet
+* 참석 인원: 김희주, 이나경, 채서연, 강민정
+* 회의 내용
+  - 중간 발표 피드백
+  - 데이터셋 구조 결정: 각 클래스별 6000장
+    ```
+    dataset/
+    ├── images/
+    │   ├── anger/
+    │   │   ├── anger_0000.jpg
+    │   │   ├── anger_….jpg
+    │   │   ├── anger_6000.jpg
+    │   ├── fear/
+    │   │   ├── fear_0000.jpg
+    │   │   ├── fear_….jpg
+    │   │   ├── fear_6000.jpg
+    │   ├── happy/
+    │   │   ├── happy_0000.jpg
+    │   │   ├── happy_….jpg
+    │   │   ├── happy_6000.jpg
+    │   ├── sadness/
+    │   │   ├── sadness_0000.jpg
+    │   │   ├── sadness_….jpg
+    │   │   ├── sadness_6000.jpg
+    └── labels.csv
+    ```
+  - 라벨 데이터 형태 결정
+    ```
+    <labels.csv>
+    filename,emotion
+    anger_0000.jpg,anger
+    anger_0001.jpg,anger
+    …
+    sadness_4999,sadness
+    sadness_6000,sadness
+    ```
+  - 이미지 수집 및 라벨링 역할 분담: [공개된 감정 데이터셋](https://qzyou.github.io/projects/sa-ds/) + 직접 이미지 수집 후 라벨링 진행
+  - 감정 분류 모델 데이터셋 구축
+* 회의 사진
+  <br/>
+  <img width="600" alt="Image" src="https://github.com/user-attachments/assets/f5d08562-f9a3-486d-9e59-af718f6fc55e" />
+
+<br/>
+
