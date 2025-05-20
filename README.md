@@ -44,10 +44,10 @@
 ## 주차별 팀원 기여도
 |이름|6주차|7주차|8주차|9주차|10주차|11주차|12주차|13주차|14주차|
 |-----|-----|-----|-----|-----|-----|-----|-----|-----|-----|
-|김희주|25%|25%|25%|25%|25%|
-|이나경|25%|25%|25%|25%|25%|
-|채서연|25%|25%|25%|25%|25%|
-|강민정|25%|25%|25%|25%|25%|
+|김희주|25%|25%|25%|25%|25%|25%|25%|
+|이나경|25%|25%|25%|25%|25%|25%|25%|
+|채서연|25%|25%|25%|25%|25%|25%|25%|
+|강민정|25%|25%|25%|25%|25%|25%|25%|
 
 <br/><br/>
 
@@ -63,7 +63,7 @@
   - 팀명 및 프로젝트명 논의, 주차별 활동 계획 수립, 역할 분담(임시)
 * 회의 사진
   <br/>
-  <img width="600" alt="Image" src="https://github.com/user-attachments/assets/bd1bb2e3-1b49-4eb2-bfbf-a58911777228" />
+  <img width="600" alt="Image" src="https://github.com/user-attachments/assets/e5b8a51e-7324-4ef9-968b-d762f0e40e1d" />
 
 <br/>
 
@@ -85,12 +85,12 @@
   4. Interpreting Instance Normalization<br/>
   <blockquote>
   IN은 content image의 contrast에 영향을 받지 않고, affine parameters가 출력 이미지의 스타일을 완전히 변경할 수 있다는 특징이 있다. 또한, 개별 이미지의 스타일을 target style로 정규화 하여 content manipulation에 집중할 수 있으므로 학습에 용이하다. 실험에 따르면, IN이 BN보다 빠르게 수렴하며 정규화 된 이미지에 대해서도 효과적인 성능을 보인다.<br/>
-  <img width="452" alt="image" src="https://github.com/user-attachments/assets/30302e95-9486-4744-aa1e-258b742f0f65" />
+  <img width="452" alt="Image" src="https://github.com/user-attachments/assets/5bdf480d-71e0-453c-9233-0cc308ce4fff" />
   </blockquote>
   <br/>
   5. Adaptive Instance Normalization <br/>
   <blockquote>
-    <img width="452" alt="image" src="https://github.com/user-attachments/assets/ac569b26-44c9-4ef4-8e53-92185c21c0f7" /><br/>
+    <img width="452" alt="Image" src="https://github.com/user-attachments/assets/fc333bd2-9c41-455d-8d5b-fb4a4a6a3de3" /><br/>
   AdaIN은 content 입력 x 와 style 입력 y를 받아, x의 평균과 분산을 y의 통계값에 맞춰 정규화한다. 입력을 정규화한 뒤, y의 표준편차로 스케일링하고 평균을 더하는 방식이라 할 수 있다. BN, IN, CIN과는 달리 학습 가능한 affine 파라미터 없이 스타일 입력에서 통계값을 직접 계산한다. 이러한 통계값은 채널별로, 공간 전체를 기준으로 계산되며 스타일 특유의 질감을 효과적으로 전달할 수 있다는 장점이 있다.
   </blockquote>
   <br/>
@@ -103,7 +103,7 @@
 
 * 회의 사진
   <br/>
-  <img width="600" alt="Image" src="https://github.com/user-attachments/assets/18690827-da7b-49e5-9979-f2370cf0b25f" />
+  <img width="600" alt="Image" src="https://github.com/user-attachments/assets/c798ac32-a704-42b0-b829-201733d09636" />
 
 <br/>
 
@@ -117,7 +117,7 @@
   - 중간 발표 준비
 * 회의 사진
   <br/>
-  <img width="600" alt="Image" src="https://github.com/user-attachments/assets/03cd2925-9aa4-46fe-9dc6-502d8c2638ee" />
+  <img width="600" alt="Image" src="https://github.com/user-attachments/assets/54f6f6f5-afdb-4b1e-b89c-81215abc3e70" />
 
 <br/>
 
@@ -163,7 +163,7 @@
   - 감정 분류 모델 데이터셋 구축
 * 회의 사진
   <br/>
-  <img width="600" alt="Image" src="https://github.com/user-attachments/assets/f5d08562-f9a3-486d-9e59-af718f6fc55e" />
+  <img width="600" alt="Image" src="https://github.com/user-attachments/assets/bee27767-b3b0-4cbc-a2b6-df76608ff390" />
 
 <br/>
 
@@ -179,7 +179,9 @@
   - 스타일 이미지: WikiArt 데이터셋(24,000장)
 * 회의 사진
   <br/>
-  <img width="600" alt="Image" src="https://github.com/user-attachments/assets/e2bde5a8-b928-4e08-b0e2-d692ccc76157" />
+  <img width="600" alt="Image" src="https://github.com/user-attachments/assets/4284a744-499f-43d4-9ac7-62c8455ab644" />
 
 <br/>
 
+### 11주차
+> 감정 분류 모델 구현 - 회의록 폴더에 업로드
