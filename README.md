@@ -189,7 +189,7 @@
 * 참석 인원: 김희주, 이나경, 채서연, 강민정
 * 회의 내용
   
-# 감정 분류 CNN 모델 트러블 슈팅
+#### 감정 분류 CNN 모델 트러블 슈팅
 기존 CNN 구현 (감정 이미지 데이터셋 로드 후 데이터 별 라벨 학습) 후  validation accuracy가 0.6 정도에서 saturate 되는 현상이 지속적으로 발생.
 <br/>
 따라서 시도한 큰 갈래의 방법
@@ -204,7 +204,7 @@
 이 모든 것을 일주일동안 다르게 조합해서 열심히 돌려보았으나 validation accuracy가 최대 66%정도까지 밖에 나오지 않음.
 <br/>
 
-## 가장 최근 코드 변경 사항
+#### 가장 최근 코드 변경 사항
 1. 모델 efficientnet 사용, dropout p=0.5 적용
 <img width="428" alt="Image" src="https://github.com/user-attachments/assets/68282f02-fb46-43f3-9fb5-234584799b2d" />
 <img width="452" alt="Image" src="https://github.com/user-attachments/assets/c660e9c1-2fe0-402f-9a12-afd8f42b2991" />
